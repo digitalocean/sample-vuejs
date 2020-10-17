@@ -6,7 +6,7 @@
         Deployed to
         <span
           class="font-bold bg-clip-text text-transparent bg-gradient-to-br from-blue-400 via-purple-400 to-blue-500"
-        >DigitalOcean</span>
+        ><a href="https://www.digitalocean.com/">DigitalOcean</a></span>
       </h3>
 
       <div class="flex justify-center space-x-2 mt-6 lg:mt-10">
