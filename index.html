@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script src="https://unpkg.com/vue@next"></script>
+    <script src="https://unpkg.com/vue-router@next"></script>
+
+    <div id="app">
+      <ul>
+        <li><router-link to="/">Home</router-link></li>
+        <li><router-link to="/foo">Foo</router-link></li>
+        <li><router-link to="/bar">Bar</router-link></li>
+      </ul>
+      <router-view></router-view>
+    </div>
+
+    <script>
+      const { createRouter, createWebHistory, createWebHashHistory } = VueRouter
+      const { createApp } = Vue
+
+      const Home = {
+        template: `<div>home</div>`,
+      }
+
+      const Foo = { template: '<div>foo</div>' }
+      const Bar = { template: '<div>bar</div>' }
+
+      const router = createRouter({
+        history: createWebHistory(),
+        routes: [
+          { path: '/', component: Home },
+          { path: '/foo', component: Foo },
+          { path: '/bar', component: Bar },
+        ],
+      })
+
+      const app = createApp({})
+      app.use(router)
+
+      window.vm = app.mount('#app')
+    </script>
+  </body>
+</html>
