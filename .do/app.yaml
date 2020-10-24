@@ -7,3 +7,4 @@ services:
     deploy_on_push: true
     repo: digitalocean/sample-vuejs
   name: sample-vuejs
+  error_document: error.html
