@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
 	"start": "serve",
-	"build": "mkdir _static && cp index.html _static"
+	"build": "mkdir -p _static && cp index.html _static/"
   },
   "devDependencies": {
     "serve": "^11.3.2"
