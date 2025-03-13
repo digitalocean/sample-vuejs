@@ -1,7 +1,7 @@
 <template>
   <div id="app" class="bg-green-600 py-56 min-h-screen">
     <div class="container mx-auto text-center px-8">
-      <h2 class="text-3xl lg:text-6xl font-bold mb-2 text-white">Welcome to Your Vue App</h2>
+      <h2 class="text-3xl lg:text-6xl font-bold mb-2 text-white">Welcome to My Vue App</h2>
       <h3 class="text-xl lg:text-4xl text-green-200">
         Deployed to
         <span
